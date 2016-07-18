@@ -65,8 +65,10 @@ h3 {
   margin-top: 0;
 }
 
-.middle {
-  margin: 0 20px;
+@media (min-width: 992px) {
+  .middle {
+    margin: 0 20px;
+  }
 }
 
 
