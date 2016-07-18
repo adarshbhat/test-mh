@@ -4,10 +4,16 @@ body {
 
 #menu {
   list-style-type: none;
-  margin-right: 10px;
   text-align: center;
-  font-size: 22px;
+  font-size: 17px;
   font-weight: bold;
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  #menu {
+    font-size: 22px;
+  }
 }
 
 #menu li {
