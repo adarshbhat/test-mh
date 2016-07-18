@@ -1,0 +1,87 @@
+body {
+  font-family: 'Simonetta', sans-serif;
+}
+
+#menu {
+  list-style-type: none;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#menu li {
+  display: inline-block;
+}
+
+#menu a {
+  color: black;
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+#menu .selected {
+  border-bottom: solid 3px maroon;
+}
+
+.pic {
+  background: #efefef url('img/goldengate.jpg') 0 -50px no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+/*
+@media (min-width: 768px) {
+  .pic {
+    background-position: 0 -10pc;
+  }
+}
+
+@media (min-width: 992px) {
+  .pic {
+    background-position: 0 -29pc;
+  }
+}*/
+
+h1#title {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1#title > div {
+  font-size: 18px;
+}
+
+main {
+  padding: 20px;
+}
+
+@media (min-width: 992px) {
+  main.cols {
+    display: flex;
+  }
+}
+
+main > div {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+.middle {
+  margin: 0 20px;
+}
+
+
+.contact-me a {
+  display: inline-block;
+  margin-right: 10px;
+  color: black;
+}
+
+.address-links a {
+  color: black;
+}
