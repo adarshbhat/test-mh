@@ -31,13 +31,7 @@ body {
   height: 400px;
 }
 
-@media (min-width: 768px) {
-  .pic {
-    background-position: 0 -10pc;
-  }
-}
-
-@media (min-width: 992px) {
+@media (min-width: 1133px) {
   .pic {
     background-position: 0 -20pc;
   }
