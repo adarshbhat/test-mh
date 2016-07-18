@@ -26,11 +26,11 @@ body {
 }
 
 .pic {
-  background: #efefef url('img/goldengate.jpg') 0 -50px no-repeat;
+  background: #efefef url('img/ggb.jpg') 0 0 no-repeat;
   background-size: cover;
   height: 400px;
 }
-/*
+
 @media (min-width: 768px) {
   .pic {
     background-position: 0 -10pc;
@@ -39,9 +39,9 @@ body {
 
 @media (min-width: 992px) {
   .pic {
-    background-position: 0 -29pc;
+    background-position: 0 -20pc;
   }
-}*/
+}
 
 h1#title {
   margin-top: 0;
