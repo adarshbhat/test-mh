@@ -1,5 +1,11 @@
 body {
   font-family: 'Simonetta', sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 992px;
+  margin: auto;
 }
 
 #menu {
@@ -7,6 +13,7 @@ body {
   text-align: center;
   font-size: 17px;
   font-weight: bold;
+  margin: 5px;
   padding: 0;
 }
 
@@ -32,15 +39,9 @@ body {
 }
 
 .pic {
-  background: #efefef url('img/ggb.jpg') 0 0 no-repeat;
-  background-size: cover;
-  height: 400px;
-}
-
-@media (min-width: 1133px) {
-  .pic {
-    background-position: 0 -20pc;
-  }
+  background: #efefef url('img/ggb_low.jpg') 0 0 no-repeat;
+  background-size: contain;
+  height: 450px;
 }
 
 h1#title {
@@ -53,7 +54,7 @@ h1#title > div {
 }
 
 main {
-  padding: 20px;
+  padding: 20px 0;
 }
 
 @media (min-width: 992px) {
