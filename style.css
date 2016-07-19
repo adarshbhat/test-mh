@@ -38,12 +38,6 @@ body {
   border-bottom: solid 3px maroon;
 }
 
-.pic {
-  background: #efefef url('img/ggb_low.jpg') 0 0 no-repeat;
-  background-size: contain;
-  height: 450px;
-}
-
 h1#title {
   margin-top: 0;
   padding-top: 0;
@@ -61,11 +55,12 @@ main {
   main.cols {
     display: flex;
   }
-}
 
-main > div {
-  margin-right: 20px;
-  margin-bottom: 20px;
+  main > div {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
 }
 
 h3 {
