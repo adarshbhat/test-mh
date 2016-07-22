@@ -82,3 +82,7 @@ h3 {
 .address-links a {
   color: black;
 }
+
+img {
+  border-radius: 5px;
+}
