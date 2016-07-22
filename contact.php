@@ -4,13 +4,24 @@ $method = $_SERVER['REQUEST_METHOD'];
 if ($method == 'POST') {
 
   $to = 'matthew@matthewheimark.com';
-  $subject = 'Website contact';
-  $message = 'First email test';
-  $headers = 'From: matthew@matthewheimark.com';
+  $subject = 'New message from www.matthewheimark.com';
+  $headers = 'From: "Contact Form" <matthew@matthewheimark.com>';
+
+  $name = isset($_POST['name']) ? $_POST['name'] : 'No name';
+  $email = isset($_POST['email']) ? $_POST['email'] : 'No email';
+  $phone = isset($_POST['phone']) ? $_POST['phone'] : 'No phone';
+  $subj = isset($_POST['subject']) ? $_POST['subject'] : 'No subject';
+  $msg = isset($_POST['message']) ? $_POST['message'] : 'No message';
+
+  $message = 'Name: ' . $name;
+  $message = $message . "\r\nEmail: " . $email;
+  $message = $message . "\r\nPhone: " . $phone;
+  $message = $message . "\r\nSubject: " . $subj;
+  $message = $message . "\r\n \r\n" . $msg;
 
   $success = mail($to, $subject, $message, $headers);
   $redirectUrl = "http://www.matthewheimark.com/contact.php?err=";
-  header('Location: ' . $redirectUrl . (success == TRUE) ? '0' : '1');
+  header('Location: ' . $redirectUrl . (($success == TRUE) ? '0' : '1'));
 }
 else {
 ?>
@@ -94,6 +105,12 @@ else {
           </div>
           <div style="flex-basis: 50%; margin-top: 50px;">
 
+            <?php if ($_GET['err'] == '0') { ?>
+              <div class="message success">Message sent successfully. Thank you!</div>
+            <?php } else if ($_GET['err'] == '1') { ?>
+              <div class="message failure">Failed to send message. Sorry!</div>
+            <?php } else {} ?>
+
             <form method="post" action="contact.php">
 
               <label for="name">Your Name (required)</label>
@@ -109,15 +126,9 @@ else {
               <input id="subject" name="subject" class="form-control">
 
               <label for="message">Your Message</label>
-              <textarea id="message" rows="5" class="form-control"></textarea>
+              <textarea id="message" name="message" rows="5" class="form-control"></textarea>
 
               <input type="submit" name="send" value="SEND" class="btn" style="width: 80%;">
-              <?php if ($_GET['err'] == '0') { ?>
-                <div class="message success">Message sent successfully. Thank you!</div>
-              <?php } else if ($_GET['err'] == '1') { ?>
-                <div class="message failure">Failed to send message. Sorry!</div>
-              <?php } else {} ?>
-
             </form>
 
             <div class="contact-me" style="margin-top: 50px; margin-left: 20%">
