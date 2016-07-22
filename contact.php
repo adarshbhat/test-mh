@@ -90,9 +90,9 @@ else {
 
               <p>Like many other qualified mental health clinicians, I have elected not to join any health insurance panels at this time.
 
-              <p>Your health insurance carrier may allow you to choose an out-of-network provider. I am happy to provide you with a super bill on a monthly basis so that you can seek reimbursement. I advise you to check with your carrier to verify coverage for out-of-network providers and rates of reimbursement.
+              <p>Your health insurance carrier may allow you to choose an out-of-network provider. I am happy to provide you with a summary of charges so that you can seek reimbursement. I advise you to check with your carrier to verify coverage for out-of-network providers and rates of reimbursement.
 
-              <p>The fee for a 50-minute session is $120.
+              <p>Please contact me to discuss my fee. I offer a 15 minute phone consultation at no charge. This gives us an opportunity to discover what you are looking for, and determine how I can best serve you. 
 
             <p><b>Office Location:</b><br/>
               207A Sanchez Street,<br/>
