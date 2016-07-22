@@ -86,3 +86,16 @@ h3 {
 img {
   border-radius: 5px;
 }
+
+.message {
+  margin-top: 20px;
+  margin-left: 20%;
+}
+
+.message.success {
+  color: darkgreen;
+}
+
+.message.failure {
+  color: maroon;
+}
