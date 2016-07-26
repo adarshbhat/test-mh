@@ -99,3 +99,88 @@ img {
 .message.failure {
   color: maroon;
 }
+
+#fading-quotes-parent {
+  position: relative;
+}
+
+#fading-quotes {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+#fading-quotes li {
+  list-style-type: none;
+  animation-name: quote;
+  animation-duration: 30s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  position: absolute;
+  width: auto;
+  text-shadow: 1px 1px 1px white;
+}
+
+#fading-quotes li:nth-child(1) {
+  top: 50px;
+  left: 50px;
+}
+
+#fading-quotes li:nth-child(2) {
+  bottom: 50px;
+  left: 200px;
+  animation-delay: 6s;
+}
+
+#fading-quotes li:nth-child(3) {
+  bottom: 50px;
+  left: 300px;
+  animation-delay: 12s;
+}
+
+#fading-quotes li:nth-child(4) {
+  top: 50px;
+  right: 200px;
+  animation-delay: 18s;
+}
+
+#fading-quotes li:nth-child(5) {
+  top: 150px;
+  right: 200px;
+  animation-delay: 24s;
+}
+
+@keyframes quote {
+  from {
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+
+  1% {
+    opacity: 1;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  20% {
+    transform: scale(1.2, 1.2);
+    opacity: 0;
+  }
+
+  21% {
+    transform: scale(0, 0);
+  }
+
+  to {
+    transform: scale(0, 0);
+  }
+}
+
+@media (min-width: 992px) {
+  #fading-quotes {
+    display: block;
+  }
+}
